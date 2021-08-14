@@ -9,7 +9,7 @@ const {
 const {catchError} = require("../utils")
 const uploader = require("../helpers/cloudinary");
 
-router.post("/signup", uploader.single("image"), catchError(signupProcess))
+router.post("/signup", signupProcess/*catchError(signupProcess)*/)
 
 router.post("/login",loginProcess);
 

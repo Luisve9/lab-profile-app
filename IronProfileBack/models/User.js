@@ -18,7 +18,6 @@ const userSchema = new Schema(
     },
     image:{
         type:String,
-        required: [true, "Debes agregar una imagen de perfil"],
     },
     course: {
       type:String,
